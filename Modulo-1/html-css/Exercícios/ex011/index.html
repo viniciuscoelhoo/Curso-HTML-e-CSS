@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="galeria icon.png" type=" image/x-icon">
+    <title>Inserindo mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir em sites diferentes a mesma imagem</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/img-P.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/img-M.png" type="image/png">
+        <img src="imagens/img-G.png" alt="A imagem flexível funciona.">
+    </picture>
+    <h1>Reproduzindo audio</h1>
+    <p>Seu navegador não consegue reproduzir áudio <a href="midia/CHAMADA A COBRAR.mp3" download="chamada a cobrar.mp3" type="audio/mpeg">clique aqui para baixar o áudio.</a></p>
+
+    <p>Se o navegador consegue reproduzir o audio</p>
+    <audio src="midia/CHAMADA A COBRAR.mp3" controls ></audio>
+
+    <p>outra maneira</p>
+    <audio preload="metadata" controls>
+        <source src="midia/CHAMADA A COBRAR.mp3" type="audio/mpeg">
+    </audio>
+    
+</body>
+</html>
